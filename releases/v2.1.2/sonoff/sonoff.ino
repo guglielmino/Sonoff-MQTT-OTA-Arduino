@@ -642,12 +642,7 @@ void mqtt_connected()
 }
 
 void mqtt_reconnect()
-{ 
-  #ifdef USE_DISCOVERY
-  if(discoverMQTTServer()){
-    mqttClient.setServer(sysCfg.mqtt_host, sysCfg.mqtt_port);
-  }
-  #endif
+{
   char stopic[TOPSZ], svalue[TOPSZ], log[LOGSZ];
 
   mqttcounter = MQTT_RETRY_SECS;

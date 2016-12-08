@@ -5,8 +5,8 @@
 \*********************************************************************************************/
 
 // Enable only one out of three MODULE defines below
-//#define MODULE                 SONOFF            // Sonoff, Sonoff SV, Sonoff Dual, Sonoff TH 10A/16A, S20 Smart Socket, 4 Channel
-#define MODULE                 SONOFF_POW        // Sonoff Pow
+#define MODULE                 SONOFF            // Sonoff, Sonoff SV, Sonoff Dual, Sonoff TH 10A/16A, S20 Smart Socket, 4 Channel
+//#define MODULE                 SONOFF_POW        // Sonoff Pow
 //#define MODULE                 ELECTRO_DRAGON    // Electro Dragon Wifi IoT Relay Board Based on ESP8266  
 
 // -- Project --------------------------------
@@ -262,5 +262,3 @@
 #endif
 #endif
 
-// Service discovery (mDNS)
-#define USE_DISCOVERY
