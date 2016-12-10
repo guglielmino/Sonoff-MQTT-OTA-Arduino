@@ -5,9 +5,9 @@
 \*********************************************************************************************/
 
 // Enable only one out of three MODULE defines below
-//#define MODULE                 SONOFF            // Sonoff, Sonoff SV, Sonoff Dual, Sonoff TH 10A/16A, S20 Smart Socket, 4 Channel
-#define MODULE                 SONOFF_POW        // Sonoff Pow
-//#define MODULE                 ELECTRO_DRAGON    // Electro Dragon Wifi IoT Relay Board Based on ESP8266  
+#define MODULE                 SONOFF            // Sonoff, Sonoff SV, Sonoff Dual, Sonoff TH 10A/16A, S20 Smart Socket, 4 Channel
+//#define MODULE                 SONOFF_POW        // Sonoff Pow
+//#define MODULE                 ELECTRO_DRAGON    // Electro Dragon Wifi IoT Relay Board Based on ESP8266
 
 // -- Project --------------------------------
 #define PROJECT                "sonoff"     // PROJECT is used as the default topic delimiter and OTA file name
@@ -126,7 +126,7 @@
  * Wall switch and HC-SR501
 \*-------------------------------------------------------------------------------------------*/
   #define SWITCH_PIN           14           // GPIO 14 = Standard wall switch to Gnd (Sonoff_TH10A(16A), Sonoff SV)
-  #define SWITCH_MODE          TOGGLE       // [SwitchMode] TOGGLE, FOLLOW, FOLLOW_INV, PUSHBUTTON or PUSHBUTTON_INV (the wall switch state)
+  #define SWITCH_MODE          TOGGLE       // [SwitchMode] TOGGLE, FOLLOW or FOLLOW_INV (the wall switch state)
 //  #define USE_WALL_SWITCH                   // Enable the use of a standard wall switch to control the relay
 /*-------------------------------------------------------------------------------------------*\
  * Single wire devices DS18B20 and DS18S20
@@ -190,7 +190,7 @@
  * Wall switch and HC-SR501
 \*-------------------------------------------------------------------------------------------*/
   #define SWITCH_PIN           14           // GPIO 14 = Standard wall switch to Gnd
-  #define SWITCH_MODE          TOGGLE       // [SwitchMode] TOGGLE, FOLLOW, FOLLOW_INV, PUSHBUTTON or PUSHBUTTON_INV (the wall switch state)
+  #define SWITCH_MODE          TOGGLE       // [SwitchMode] TOGGLE, FOLLOW or FOLLOW_INV (the wall switch state)
 //  #define USE_WALL_SWITCH                   // Enable the use of a standard wall switch to control the relay
 /*-------------------------------------------------------------------------------------------*\
  * Single wire devices DS18B20 and DS18S20
@@ -262,7 +262,3 @@
   #error "Select either USE_WALL_SWITCH or SEND_TELEMETRY_I2C or use different GPIOs"
 #endif
 #endif
-
-// Service discovery (mDNS)
-#define USE_DISCOVERY
-
