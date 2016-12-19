@@ -31,7 +31,7 @@ POSSIBILITY OF SUCH DAMAGE.
 boolean discoverMQTTServer() {
   if (!MDNS.begin(sysCfg.hostname)) {
     addLog_P(LOG_LEVEL_ERROR, PSTR("DISCOVERY: MDNS initialization failed"));
-     return false;
+    return false;
   }
   
   int n = MDNS.queryService("mqtt", "tcp"); // Search for mqtt service
@@ -64,7 +64,6 @@ void IPtoCharArray(IPAddress address, char *ip_str, size_t size)
     str += ".";
     str += String(address[3]);
     str.toCharArray(ip_str, size);
-
 }
 
 #endif
