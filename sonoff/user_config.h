@@ -10,8 +10,8 @@
 
 // Enable only one out of five MODULE defines below
 //#define MODULE                 SONOFF            // Sonoff Basic, Sonoff RF, Sonoff SV, Sonoff Dual, Sonoff TH, S20 Smart Socket
-#define MODULE                 SONOFF_2          // Sonoff Touch, Sonoff 4CH
-//#define MODULE                 SONOFF_POW        // Sonoff Pow
+//#define MODULE                 SONOFF_2          // Sonoff Touch, Sonoff 4CH
+#define MODULE                 SONOFF_POW        // Sonoff Pow
 //#define MODULE                 MOTOR_CAC         // iTead Motor Clockwise/Anticlockwise
 //#define MODULE                 ELECTRO_DRAGON    // Electro Dragon Wifi IoT Relay Board Based on ESP8266
 
